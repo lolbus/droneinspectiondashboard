@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Build output (Vite)
+dist/
+build/
+
+# Vite
+.vite/
+vite.config.*.timestamp-*
+
+# Local env and secrets (Vercel injects production env in the cloud)
+.env
+.env.*
+!.env.example
+
+# Vercel CLI local link state
+.vercel
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / editor
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.pem
+.turbo
+.cache

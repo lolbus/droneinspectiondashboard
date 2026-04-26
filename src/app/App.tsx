@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import dxcOasisLogo from '../imports/Image_(DXC_OASIS).png';
+import refineryOverviewImage from '../imports/OilRefinery/fd9849e032239f1dcb564a7aed514ecfc656a820.png';
+import pipeInspectionImage from '../imports/OilRefinery/e0fd970c655d8b388e412b2cc53486586285c247.png';
 
 // Animated KPI Card Component
 function AnimatedKPICard({
@@ -271,7 +274,7 @@ export default function App() {
           {/* Left Group: Logo + Title + Subtitle */}
           <div className="flex items-center gap-5">
             <div className="flex-shrink-0">
-              <img src="/src/imports/Image_(DXC_OASIS).png" alt="DXC Logo" className="h-[23px] w-auto" />
+              <img src={dxcOasisLogo} alt="DXC Logo" className="h-[23px] w-auto" />
             </div>
             <div className="flex flex-col justify-center">
               <h1 className="text-[#f8fafc] text-xl font-bold leading-tight">Drone Inspection AI</h1>
@@ -390,7 +393,7 @@ export default function App() {
           <div className="p-5">
             <div className="relative h-[540px] overflow-hidden rounded-lg shadow-[inset_0_0_0_1px_rgba(49,65,88,0.3)]">
               <img
-                src="/src/imports/OilRefinery/fd9849e032239f1dcb564a7aed514ecfc656a820.png"
+                src={refineryOverviewImage}
                 alt="Refinery overview"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -448,7 +451,7 @@ export default function App() {
           <div className="p-5">
             <div className="relative h-[540px] overflow-hidden rounded-lg shadow-[inset_0_0_0_1px_rgba(49,65,88,0.3)]">
               <img
-                src="/src/imports/OilRefinery/e0fd970c655d8b388e412b2cc53486586285c247.png"
+                src={pipeInspectionImage}
                 alt="Pipe inspection"
                 className="w-full h-full object-cover rounded-lg"
               />
